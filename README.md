@@ -1,5 +1,5 @@
 # a data manage tool for javascript
-This is a local database for javascript, it can easily manage your data in javascript.<br/>
+This is a data manage tool for javascript, it can easily manage your data in javascript.<br/>
 function:<br/>
 1. localDB.set(key,value);<br/>
   the key must be type of string, and the value can be any object or even a function.<br/>
