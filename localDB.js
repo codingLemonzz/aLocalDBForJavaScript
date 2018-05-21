@@ -1,7 +1,6 @@
 var localDB = {
 	localMap: {},
 
-<<<<<<< HEAD
 	//set data 
 	set: function(key, value) {
 		localDB.localMap[key] = value;
@@ -53,7 +52,7 @@ var localDB = {
 		}
 	},
 	//get all data 
-=======
+
 	set: function(key, value) {
 		localDB.localMap[key] = value;
 	},
@@ -66,7 +65,6 @@ var localDB = {
 		delete localDB.localMap[key];
 	},
 
->>>>>>> 89428a04a97947846ba3b550f666e72760b4f673
 	getAll: function() {
 		var arr = new Array();
 		for(var key in localDB.localMap) {
@@ -74,19 +72,18 @@ var localDB = {
 		}
 		return arr;
 	},
-<<<<<<< HEAD
+
 	//delete all data
 	deleteAll: function() {
 		localDB.localMap = {};
 	},
 	//set data where have the lifecycle
-=======
+
 
 	deleteAll: function() {
 		localDB.localMap = {};
 	},
 
->>>>>>> 89428a04a97947846ba3b550f666e72760b4f673
 	minSet: function(key, value, millisecond) {
 		if(!util.checkNumber(millisecond)) {
 			return "The third args is not a number!";
