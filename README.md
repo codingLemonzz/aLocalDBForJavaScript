@@ -6,7 +6,7 @@ function:<br/>
     the key must be type of string, and the value can be any object.<br/>
 2. localDB.get(key);<br/>
     the key must be type of string, the return of this function is an object.
-3.localDB.delete(key);<br/>
+    3.localDB.delete(key);<br/>
     the key must be type of string.<br/>
 4.localDB.getAll();<br/>
     the return of this function is a two-dimensional array,the type of every element of this array is       like this:[key,value]<br/>
