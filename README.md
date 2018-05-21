@@ -1,4 +1,4 @@
-# aLocalDBForJavaScript
+# a local database for javascript
 This is a local database for javascript, it can easily manage your data in javascript.<br/>
 function:<br/>
 1. localDB.set(key,value);<br/>
