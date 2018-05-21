@@ -14,4 +14,4 @@ This is a local database for javascript, it can easily manage your data in javas
 6.localDB.minSet(key,value,millisecond);
   the key must be type of string, and the value can be any object,the millisecond must be a number.
   this function can set a value where have the lifecycle,it depends on the millisecond.
-	</pre>
+</pre>
