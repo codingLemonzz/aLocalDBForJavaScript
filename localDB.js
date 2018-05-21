@@ -7,10 +7,10 @@ var localDB = {
 	},
 	//set a batch data
 	arrSet: function(arr) {
-		if(Array.isArray(arr)){
-			for(var i=0; i<arr.length; i++){
-				if(Array.isArray(arr[i])){
-					localDB.localMap[arr[i][0]]=arr[i][1];
+		if(Array.isArray(arr)) {
+			for(var i = 0; i < arr.length; i++) {
+				if(Array.isArray(arr[i])) {
+					localDB.localMap[arr[i][0]] = arr[i][1];
 				}
 			}
 		}
@@ -21,10 +21,10 @@ var localDB = {
 	},
 	//get a batch data 
 	arrGet: function(arr) {
-		var dataArr=new Array();
-		if(Array.isArray(arr)){
-			for(var i=0; i<arr.length; i++){
-				dataArr.push([arr[i],localDB.localMap[arr[i]]]);
+		var dataArr = new Array();
+		if(Array.isArray(arr)) {
+			for(var i = 0; i < arr.length; i++) {
+				dataArr.push([arr[i], localDB.localMap[arr[i]]]);
 			}
 		}
 		return dataArr;
@@ -32,39 +32,14 @@ var localDB = {
 	//get data where key contains the args
 	getLike: function(likeKey) {
 		var likeArr = new Array();
-		for(var key in localDB.localMap){
-			if(key.indexOf(likeKey) >0){
-				likeArr.push([key,localDB.localMap[key]]);
+		for(var key in localDB.localMap) {
+			if(key.indexOf(likeKey) > 0) {
+				likeArr.push([key, localDB.localMap[key]]);
 			}
 		}
 		return likeArr;
 	},
-	//delete data according to key
-	delete: function(key) {
-		delete localDB.localMap[key];
-	},
-	//delete a batch data
-	arrDelete: function(arr) {
-		if(Array.isArray(arr)){
-			for(var i=0; i<arr.length; i++){
-				delete localDB.localMap[arr[i]];
-			}
-		}
-	},
 	//get all data 
-
-	set: function(key, value) {
-		localDB.localMap[key] = value;
-	},
-
-	get: function(key) {
-		return localDB.localMap[key];
-	},
-
-	delete: function(key) {
-		delete localDB.localMap[key];
-	},
-
 	getAll: function() {
 		var arr = new Array();
 		for(var key in localDB.localMap) {
@@ -72,18 +47,23 @@ var localDB = {
 		}
 		return arr;
 	},
-
+	//delete data according to key
+	delete: function(key) {
+		delete localDB.localMap[key];
+	},
+	//delete a batch data
+	arrDelete: function(arr) {
+		if(Array.isArray(arr)) {
+			for(var i = 0; i < arr.length; i++) {
+				delete localDB.localMap[arr[i]];
+			}
+		}
+	},
 	//delete all data
 	deleteAll: function() {
 		localDB.localMap = {};
 	},
 	//set data where have the lifecycle
-
-
-	deleteAll: function() {
-		localDB.localMap = {};
-	},
-
 	minSet: function(key, value, millisecond) {
 		if(!util.checkNumber(millisecond)) {
 			return "The third args is not a number!";
@@ -94,7 +74,7 @@ var localDB = {
 			}, millisecond);
 		}
 	}
-	
+
 };
 
 var util = {
