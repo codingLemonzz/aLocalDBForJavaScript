@@ -2,9 +2,9 @@
 This is a local database for javascript, it can easily manage your data in javascript.<br/>
 function:<br/>
 1. localDB.set(key,value);<br/>
-  the key must be type of string, and the value can be any object.<br/>
+  the key must be type of string, and the value can be any object or even a function.<br/>
 2. localDB.get(key);<br/>
-  the key must be type of string, the return of this function is an object.<br/>
+  the key must be type of string, the return of this function is an object or a function.If it's a fuction,you can trigger the function like this:(localDB.get('function name'))();<br/>
 3. localDB.delete(key);<br/>
   the key must be type of string.<br/>
 4. localDB.getAll();<br/>
