@@ -1,5 +1,9 @@
 # a data manage tool for javascript
 This is a data manage tool for javascript, it can easily manage your data in javascript.<br/>
+
+### 2018.08.21 update: <br/>
+	matching the ES6 javascript grammar.
+
 # function:<br/>
 ## set Data
 ### 1. localDB.set(key,value);<br/>
