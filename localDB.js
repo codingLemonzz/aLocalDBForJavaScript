@@ -1,3 +1,13 @@
+/**
+ * use for SPA project to manage the local variable and global variable.
+ *
+ * author: zry
+ *
+ * date: 2019.01.04
+ *
+ * @type {{localMap: {}, set: localDB.set, arrSet: localDB.arrSet, get: (function(*): *), arrGet: (function(*=): Array), getLike: (function(*=): Array), getAll: (function(): Array), delete: localDB.delete, arrDelete: localDB.arrDelete, deleteAll: localDB.deleteAll, minSet: localDB.minSet}}
+ */
+
 let localDB = {
     localMap: {},
 
